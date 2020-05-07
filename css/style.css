@@ -17,10 +17,17 @@ main {
 .cuore {
   position: absolute;
   bottom: 0;
-
-
-
+  z-index: 1;
+  width: 100%;
+  display: none;
 }
+
+
+.boxes:hover .cuore {
+  display: block;
+}
+
+
 
 .boxes {
   background-color: #e7e7e7;
@@ -33,6 +40,7 @@ main {
 
 img {
   width: 100%;
+
 }
 
 .price {
@@ -50,24 +58,4 @@ img {
   background-color: red;
 }
 
-/* .boxes:first-child{
-  background-image: url("../img/tablet.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-
-}
-.boxes:last-child {
-  background-image: url("../img/beats.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.boxes:nth-child(2) {
-  background-image: url("../img/iphones.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-
-} */
+/
