@@ -7,16 +7,20 @@
 main {
   text-align:center;
 }
+
+
 #primo {
   padding-bottom: 1px;
 }
 .boxes {
-  background-color: lavender;
+  background-color: #e7e7e7;
   height: 400px;
   width: 300px;
   display: inline-block;
   position: relative;
   text-align: center;
+
+
 }
 
 .price {
@@ -26,9 +30,24 @@ main {
   height: 20px;
   width: 50px;
 }
+
  .boxes:first-child .price {
   background-color: red;
 }
 .boxes:last-child .price {
   background-color: red;
+}
+
+.boxes:first-child{
+  background-image: url("../img/tablet.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.boxes:last-child {
+  background-image: url("../img/beats.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
