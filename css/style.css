@@ -7,11 +7,28 @@
 main {
   text-align:center;
 }
-
+#primo {
+  padding-bottom: 1px;
+}
 .boxes {
   background-color: lavender;
   height: 400px;
   width: 300px;
   display: inline-block;
   position: relative;
+  text-align: center;
+}
+
+.price {
+  position: absolute;
+  left:250px;
+  background-color:green;
+  height: 20px;
+  width: 50px;
+}
+ .boxes:first-child .price {
+  background-color: red;
+}
+.boxes:last-child .price {
+  background-color: red;
 }
